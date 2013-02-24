@@ -1,0 +1,20 @@
+Before the class, send participants an introductory email. Here is some sample text.
+
+This workshop will be primarily lecture style, with some class activities. To participate, you'll need a laptop and a set of headphones. If you don't have access to a laptop, please let me know; we may be able to bring an extra for you. In class, we will be trying a screenreader simulation that requires the Adobe Shockwave plugin. To save yourself some time, you might want to go to http://www.adobe.com/shockwave/welcome/ and check to see if you have the plugin installed. 
+
+I will also be demonstrating the built-in Apple screenreader, VoiceOver. If you have an iDevices (iPod touch, iPhone, iPad), you might want to bring it along. 
+
+When setting up the class, write on the board or post clearly in room:
+Name, contact information
+Shortlink to screenreader: http://bit.ly/p3JmJ2
+Link to slides
+
+Have for each student:
+Index card and marker, for making a name card
+Making Alt Text work handout
+
+Have for you:
+Laptop
+Cables to connect to projector and speakers
+Presenter notes
+Optionally, an iDevice (iPhone, iPod, iPad) to demonstrate VoiceOver. You can find a good intro to VoiceOver at http://examples.oreilly.com/9780596804299/voiceover-free-bonus-appendix.pdf. 
