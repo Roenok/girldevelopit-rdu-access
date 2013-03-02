@@ -1,1 +1,3 @@
-readme.md
+These are the course to the Girl Develop It Web Accessibility curriculum. It was developed by Sylvia Richardson. This course is meant to be taught as a single two-hour workshop. There are three components: the course slides (classslides.html), a class activity handout (Kitten Alt text.docx), and an instructor guide (Instructor Guide.docx). 
+
+These materials are under a Creative Commons Attribution-NonCommercial license (http://creativecommons.org/licenses/by-nc/3.0/deed.en_US).
