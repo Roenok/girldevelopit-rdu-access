@@ -1,15 +1,15 @@
 GDI Core Web Accessibility
 ======================
-This is the official Girl Develop It Web Accessibility curriculum. It was originally developed by Sylvia Richardson, with additional content from Aisha Blake. This course is meant to be taught as a single two-hour workshop. There are three components: the course slides (classslides.html), a class activity handout (Kitten Alt text.docx), and an instructor guide (Instructor Guide.docx). 
+This is the official Girl Develop It Web Accessibility curriculum. It was originally developed by Sylvia Richardson, with additional content from Aisha Blake. An update by Marcy Sutton converts it to a two-week class. There are four components: the course slides (classslides.html), a class activity handout (Kitten Alt text.docx), an HTML/CSS demo with two parts (demo.html and demo.css), and an instructor guide (Instructor Guide.docx). 
 
 These materials are under a Creative Commons Attribution-NonCommercial license (http://creativecommons.org/licenses/by-nc/3.0/deed.en_US).
 ## Suggested course description below
 
 Who can use your websites? Are they accessible to as many people as possible?
 
-Web accessibility is the process of making it easy for everyone to access your web content, regardless of whether or not they approach the web in a typical way. Come to this workshop to learn more about designing with accessibility in mind—and building a better web experience for everyone.
+Web accessibility has traditionally described the process of enhancing websites for people with disabilities. Come to this class to learn more about developing with accessibility in mind—and building a better web experience for everyone.
 
-This two-hour workshop will focus on general design principles, with some hands-on exercises. It is helpful to have some knowledge of HTML and CSS.  You should also plan to bring a laptop and some headphones to work along with the class.
+This two-week class will focus on general design principles, with some hands-on exercises. It is helpful to have basic knowledge of HTML and CSS. You should also plan to bring a laptop and some headphones to work along with the class.
 
 ## Theme customization
 
