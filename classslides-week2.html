@@ -47,22 +47,23 @@
 			  <ol class="visuallyhidden" id="toc">
 				<li><a href="#slide2">Welcome</a></li>
 				<li><a href="#slide3">What is Accessibility?</a></li>
+				<li><a href="#slide4">What are the common problems?</a></li>
 				
-				<li><a href="#slide4">How do I code HTML for Accessibility?</a></li>
-				<li><a href="#slide5">Why should I care about HTML Headings?</a></li>
-				<li><a href="#slide6">What's the big deal with external links?</a></li>
-				<li><a href="#slide7">External links: Let's Develop It</a></li>
-				<li><a href="#slide8">Form Labels: How do they work?</a></li>
-				<li><a href="#slide9">Form Labels: Let's Develop It</a></li>
-				<li><a href="#slide10">Tab Index: What is it?</a></li>
-				<li><a href="#slide11">Tab Index: Let's Develop It</a></li>
+				<li><a href="#slide5">How do I code HTML for Accessibility?</a></li>
+				<li><a href="#slide6">Why should I care about HTML Headings?</a></li>
+				<li><a href="#slide7">Form Labels: How do they work?</a></li>
+				<li><a href="#slide8">Form Labels: Let's Develop It</a></li>
+				<li><a href="#slide9">What's the big deal with external links?</a></li>
+				<li><a href="#slide10">External links: Let's Develop It</a></li>
+				<li><a href="#slide11">Tab Index: What is it?</a></li>
+				<li><a href="#slide12">Tab Index: Let's Develop It</a></li>
 				
-				<li><a href="#slide12">How do I code CSS for Accessibility?</a></li>
-				<li><a href="#slide13">Offscreen content: How does it work?</a></li>
-				<li><a href="#slide14">Visibility (and Invisibility)</a></li>
-				<li><a href="#slide15">Visibility: Let's Develop It</a></li>
+				<li><a href="#slide13">How do I code CSS for Accessibility?</a></li>
+				<li><a href="#slide14">Offscreen content: How does it work?</a></li>
+				<li><a href="#slide15">Visibility (and Invisibility)</a></li>
+				<li><a href="#slide16">Visibility: Let's Develop It</a></li>
 				
-				<li><a href="#slide16">Resources</a></li>
+				<li><a href="#slide17">Resources</a></li>
 			 </ol>
 			 <img src = "img/gdi_logo_badge.png" alt="gdi logo">
 			  <h1 id="slide1">Intro to Web Accessibility</h1>
@@ -70,7 +71,7 @@
 			
 			<!-- Welcome-->
 			<section id="slide2">
-			  <h3>Welcome!</h3>
+			  <h2>Welcome!</h2>
 			  <div class = "left-align">
 			  <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
 			  <p class ="green">Some "rules"</p>
@@ -86,7 +87,7 @@
         <!-- Intro: What is Accessibility?-->
         <section>
 			<section id="slide3">
-				<h3>What is accessibility?</h3>
+				<h2>What is accessibility?</h2>
 				<ul>
 					<li>Accessibility is about making your sites useful to as many people as possible.</li>
 					<li>Accessibility is about overcoming barriers.</li>
@@ -94,74 +95,109 @@
 				</ul>
 				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
 			</section>
+			<section id="slide4">
+				<h2>What are the common problems?</h2>
+        <div id="webaim-survey-problematic-items" style="background: url(img/webaim-survey-problematic-items.png) no-repeat center top; background-size: 75% auto; padding-top: 50%; width: 100%;">
+            <ul class="visuallyhidden">
+              <li>The presence of inaccessible Flash content</li>
+              <li>CAPTCHA - images presenting text used to verify that you are a human user</li>
+              <li>Links or buttons that do not make sense</li>
+              <li>Images with missing or improper descriptions (alt text)</li>
+              <li>Screens or parts of screens that change unexpectedly</li>
+              <li>Complex or difficult forms</li>
+              <li>Lack of keyboard accessibility</li>
+              <li>Missing or improper headings</li>
+              <li>Too many links or navigation items</li>
+              <li>Complex data tables</li>
+              <li>Inaccessible or missing search functionality</li>
+              <li>Lack of "skip to main content" or "skip navigation" links</li>
+            </ul>
+        </div>
+          <p>Source: <a href="http://webaim.org/projects/screenreadersurvey4/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey, May 2012<span class="visuallyhidden"> opens in a new window</span></a></p>
+				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+			</section>
         </section>
+      
       <section>
-        <section id="slide4">
-          <h3>How do I code for accessibility?</h3>
-          <h4>HTML</h4>
+        <section id="slide5">
+          <h2>How do I code for accessibility?</h2>
+          <h3>HTML</h3>
+          <img src="img/wallace-gromit.jpg" alt="Wallace & Gromit" style="position:absolute;right:0;" />
           <ul>
               <li>Logical Headings</li>
-              <li>External link indicators</li>
               <li>Form Labels</li>
               <li>Tab Index</li>
+              <li>External link indicators</li>
           </ul>
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
-        <section id="slide5">
-          <h3>HTML Headings</h3>
-          <h4>Why should I care?</h4>
+        
+        <section id="slide6">
+          <h2>HTML Headings</h2>
+          <h3>Why should I use them?</h3>
           <p>The use of on-page headings is one of the most important usability features for screen reader users, as it helps them more easily understand the page structure. (<a href="http://www.webcredible.co.uk/user-friendly-resources/web-accessibility/screen-readers.shtml" target="_blank" title="Link opens in a new window">Source<span class="visuallyhidden"> opens in a new window</span>)</a></p>
           <!-- explanation here -->
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
         
-        <section id="slide6">
-          <h3>External Links</h3>
-          <h4>What's the big deal?</h4>
+        <section id="slide7">
+          <h2>HTML Headings</h2>
+          <h3>What's new?</h3>
+          <img src="img/html5-girl.png" alt="HTML5 Girl" />
           <!-- explanation here -->
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
         
-        <section id="slide7">
-          <h3>External Links</h3>
-          <h4>Let's Develop It</h4>
-          <!-- demo here -->
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
-        
-        
         <section id="slide8">
-          <h3>Form Labels</h3>
-          <h4>How do they work?</h4>
+          <h2>Form Labels</h2>
+          <h3>How do they work?</h3>
           <!-- explanation here -->
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
         <section id="slide9">
-          <h3>Let's develop it</h3>
-          <h4>Add form labels to an HTML form</h4>
+          <h2>Let's develop it</h2>
+          <h3>Add form labels to an HTML form</h3>
           <!-- demo here -->
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
         
         <section id="slide10">
-          <h3>Tab Index</h3>
-          <h4>What Is it?</h4>
+          <h2>External Links</h2>
+          <h3>What's the big deal?</h3>
+          <img src="img/dont-make-me-think.jpg" alt="Don't Make Me Think by Steve Krug" style="position:absolute;right:0;max-width:25%;" />
+          <img src="img/links-wcag.png" alt="WCAG 2.0 Link requirements" style="position:absolute;left:0;" />
+          <!-- explanation here -->
+    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+        </section>
+        
+        <section id="slide11">
+          <h2>External Links</h2>
+          <h3>Let's Develop It</h3>
+          <p></p>
+          <!-- demo here -->
+    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+        </section>
+        
+        <section id="slide12">
+          <h2>Tab Index</h2>
+          <h3>What Is it?</h3>
           <!-- explanation here -->
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
           <aside class="notes">Source: http://reference.sitepoint.com/html/a/tabindex</aside>
         </section>
-        <section id="slide11">
-          <h3>Let's Develop It</h3>
-          <h4>Explore tab-index on native and non-native elements</h4>
+        
+        <section id="slide13">
+          <h2>Let's Develop It</h2>
+          <h3>Explore tab-index on native and non-native elements</h3>
           <!-- demo here -->
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
       </section>
       
       <section>
-        <section id="slide12">
-          <h3>How do I code for accessibility?</h3>
-          <h4>CSS</h4>
+        <section id="slide14">
+          <h2>How do I code for accessibility?</h2>
+          <h3>CSS</h3>
           <ul>
             <li>Offscreen Content</li>
             <li>Visibility (or Invisibility)</li>
@@ -169,29 +205,57 @@
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
         
-        <section id="slide13">
-          <h3>Offscreen Content</h3>
-          <h4>How does it work?</h4>
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
-        <section id="slide14">
-          <h3>Visibility (or Invisibility)</h3>
-          <h4>How to show and hide content from all users</h4>
-          <!-- cod example here -->
-          
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
         <section id="slide15">
-          <h3>Let's Develop It</h3>
-          <h4>Explore keyboard navigation with content that is hidden and offscreen</h4>
+          <h2>Offscreen Content</h2>
+          <h3>How does it work?</h3>
+          <pre><code data-trim>
+            .offscreen {
+              display: block;
+              text-indent: -50000px;
+            }
+          </code></pre>
+          <pre><code data-trim>
+            .screen-reader-only {
+              top: auto;
+              width: 1px;
+              height: 1px;
+              left: -10000px;
+              overflow: hidden;
+              position: absolute;
+            }
+          </code></pre>
+    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+        </section>
+        
+        <section id="slide16">
+          <h2>Visibility (or Invisibility)</h2>
+          <h3>How to show and hide content from all users</h3>
+          <!-- cod example here -->
+          <pre><code data-trim>
+            .reallyHidden {
+              display: none;
+              visibility: hidden;
+            }
+            .notHidden {
+              display: block;
+              visibility: visible;
+            }
+          </code></pre>
+    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+        </section>
+        
+        <section id="slide17">
+          <h2>Let's Develop It</h2>
+          <h3>Explore keyboard navigation with content that is hidden and offscreen</h3>
           <!-- demo here -->
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
       </section>
       
-			<section id="slide16">
-				<h3>Resources</h3>
+			<section id="slide18">
+				<h2>Resources</h2>
 					<ul>
+					  <li class="fragment"><a href="http://webaim.org/techniques/css/invisiblecontent/" target="_blank" title="Link opens in a new window">WebAIM: Invisible Content with CSS<span class="visuallyhidden"> opens in a new window</span></a></li>
 						<li class="fragment"><a href="http://wave.webaim.org/toolbar/" target="_blank">WAVE toolbar</a>, a firefox extension that does in-browser checks.</li>
 						<li class="fragment"><a href="http://www.nvda-project.org/" target="_blank">NonVisual Desktop Access (NVDA)</a>,a free and open source screen reader for Windows.</li>
 						<li class="fragment"><a href="http://www.w3.org/WAI/" target="_blank">W3C Web Accessibility Initiative (WAI).</a></li>

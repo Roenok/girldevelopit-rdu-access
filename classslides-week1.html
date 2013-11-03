@@ -52,10 +52,10 @@
 				<li><a href="#slide13">Accessibility is a continuum, not a checkbox</a></li>
 				<li><a href="#slide14">Working with Screen readers</a></li>
 				<li><a href="#slide18">Other visual disabilities</a></li>
-				<li><a href="#slide22">Hearing disabilities</a></li>
-				<li><a href="#slide24">Physical disabilities</a></li>
-				<li><a href="#slide26">Cognitive disabilities</a></li>
-				<li><a href="#slide30">Conclusion</a></li>
+				<li><a href="#slide21">Hearing disabilities</a></li>
+				<li><a href="#slide23">Physical disabilities</a></li>
+				<li><a href="#slide25">Cognitive disabilities</a></li>
+				<li><a href="#slide29">Conclusion</a></li>
 			 </ol>
 			 <img src = "img/gdi_logo_badge.png" alt="gdi logo">
 			  <h1 id="slide1">Intro to Web Accessibility</h1>
@@ -203,9 +203,9 @@
 			<section id="slide18">
 				<h3>Other tips for screen readers</h3>
 				<ul>
+					<li class="fragment">Headings and skip-nav links give users a way to navigate through a page.</li>
+					<li class="fragment">External link indicators prevent unexpected page changes.</li>
 					<li class="fragment">Tables can be hard to navigate, especially if you use merged cells.</li>
-					<li class="fragment">If you are going to use image maps, make them client-side maps, with alt text on each link. (<a href="http://www.jimthatcher.com/webcourse5.htm" target="_blank" title="Link opens in a new window">More on image maps<span class="visuallyhidden"> opens in a new window</span></a>.)</li>
-					<li class="fragment">Yes, you still have to use skipnav links.</li>
 					<li class="fragment">Many users are switching to touch-screen based readers like <a href="http://www.apple.com/accessibility/iphone/vision.html" target="_blank" title="Link opens in a new window">VoiceOver<span class="visuallyhidden"> opens in a new window</span></a>.</li>
 				</ul>
 			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
@@ -224,11 +224,6 @@
 				<p class="credit">Photo credit: <a href="http://www.flickr.com/photos/antifluor/2074560932/" target="_blank" title="Link opens in a new window">antifluor<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by/2.0/" target="_blank" title="Link opens in a new window">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
 			</section>
 			<section id="slide20">
-				<h3>Be flexible</h3>
-				<img src="img/flexible.jpg" alt="Person doing a backbend"/>
-				<p class="credit">Photo credit: <a href="http://www.flickr.com/photos/dollen/5979760760/" target="_blank" title="Link opens in a new window">dollen<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nd/2.0/" target="_blank" title="Link opens in a new window">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
-			</section>
-			<section id="slide21">
 				<h3>Other visual disabilities</h3>
 				<ul>
 					<li class="fragment">If you use color to indicate something, also use another indicator. For example, underline links on hover or mark a required field with an asterisk.</li>
@@ -242,7 +237,7 @@
 		
 		<!-- Hearing disabilities-->
 		<section>
-			<section id="slide22">
+			<section id="slide21">
 				<h3>Provide good captions</h3>
 				<img src="img/in_ur_reality.png" alt="Stick figure attaching captions to cats. Dialog- Man: Oh hi; I'm here from the internet; Man 2: What are you doing!?; Man: Gluing captions to your cats."/>
 				<p class="credit">Credit: <a href="http://xkcd.com/262/" target="_blank" title="Link opens in a new window">Randall Munroe<span class="visuallyhidden"> opens in a new window</span></a> <a href="http://creativecommons.org/licenses/by-nc/2.5/" target="_blank" title="Link opens in a new window">cc<span class="visuallyhidden"> opens in a new window</span></a></p>
@@ -273,7 +268,7 @@
 					<li class="fragment">Other users use a mouse, but have trouble with fine motor control.</li>
 					<li class="fragment">Make clickable elements large, and put space between them.</li>
 					<li class="fragment">Avoid clickable page elements that move.</li>
-					<li v>Animations with rapid flickers are not only annoying, they can trigger epileptic seizures.</li>
+					<li class="fragment">Animations with rapid flickers are not only annoying, they can trigger epileptic seizures.</li>
 					<li class="fragment">These guidelines also help children and touchscreen users!</li>
 				</ul>
 			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
@@ -323,10 +318,17 @@
 			<section id="slide31">
 				<h3>Resources</h3>
 					<ul>
-						<li class="fragment"><a href="http://wave.webaim.org/toolbar/" target="_blank" title="Link opens in a new window">WAVE toolbar<span class="visuallyhidden"> opens in a new window</span></a>, a firefox extension that does in-browser checks.</li>
-						<li class="fragment"><a href="http://www.nvda-project.org/" target="_blank" title="Link opens in a new window">NonVisual Desktop Access (NVDA)<span class="visuallyhidden"> opens in a new window</span></a>,a free and open source screen reader for Windows.</li>
-						<li class="fragment"><a href="http://www.w3.org/WAI/" target="_blank" title="Link opens in a new window">W3C Web Accessibility Initiative (WAI)<span class="visuallyhidden"> opens in a new window</span>.</a></li>
-						<li class="fragment"><a href="http://webaim.org/" target="_blank" title="Link opens in a new window">WebAIM<span class="visuallyhidden"> opens in a new window</span></a>, an accessibility-focused organization with great information.</li>
+					  <li class="fragment"><a href="http://webaim.org/resources/designers/" target="_blank" title="Link opens in a new window">Web Accessibility for Designers<span class="visuallyhidden"> opens in a new window</span></a></li>
+					  
+						<li class="fragment"><a href="http://wave.webaim.org/toolbar/" target="_blank" title="Link opens in a new window">WAVE toolbar<span class="visuallyhidden"> opens in a new window</span></a>, a Firefox extension that does in-browser checks</li>
+						
+						<li class="fragment"><a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/" target="_blank" title="Link opens in a new window">Web Developer toolbar<span class="visuallyhidden"> opens in a new window</span></a>, a Firefox extension with helpful tools</li>
+						
+						<li class="fragment"><a href="http://www.nvda-project.org/" target="_blank" title="Link opens in a new window">NonVisual Desktop Access (NVDA)<span class="visuallyhidden"> opens in a new window</span></a>,a free and open source screen reader for Windows</li>
+						
+						<li class="fragment"><a href="http://www.w3.org/WAI/" target="_blank" title="Link opens in a new window">W3C Web Accessibility Initiative (WAI)<span class="visuallyhidden"> opens in a new window</span></a></li>
+						
+						<li class="fragment"><a href="http://webaim.org/" target="_blank" title="Link opens in a new window">WebAIM<span class="visuallyhidden"> opens in a new window</span></a>, an accessibility-focused organization with great information</li>
 					</ul>
 				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
 			</section>
