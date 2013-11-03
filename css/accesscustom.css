@@ -18,7 +18,7 @@ p.credit{
 	max-height: 75%;
 }
 
-  
+
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
@@ -48,3 +48,38 @@ p.credit{
     position: static;
     width: auto;
 }
+
+.clear {
+  clear: both;
+  display: block;
+}
+
+/*
+ * Code examples
+ */
+div.code-example {
+  margin:0 auto;
+  text-align: left; 
+  width: 50%; 
+}
+  .code-example label {
+    display: block; 
+    font-size:1em;
+  }
+  .code-example input[type=text] {
+    font-size: 0.75em;
+    line-height: 1.5em;
+    width: 100%
+  }
+  .code-example div.float {
+    float: left;
+    padding-top: 30px;
+    width: 50%;
+  }
+  .code-example div label {
+    display: inline;
+    margin-right: 10px;
+  }
+  .code-example div input[type=radio] {
+    -webkit-transform: scale(2);
+  }
