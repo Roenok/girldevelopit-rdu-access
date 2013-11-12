@@ -1,0 +1,38 @@
+@import url('reset.css');
+
+/* Utilities */
+
+.offscreen {
+  display: block;
+  left: -50000px;
+  position: absolute;
+}
+.reallyHidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* Defaults */
+
+a {
+  color: #01a9b4;
+}
+a:hover, a:focus {
+  color: #f3787e;
+}
+
+
+/* Content */
+div#animal {
+  display: inline-block;
+  max-width: 473px;
+  width: 100%;
+}
+  div#animal > div {
+    background-image: url('animal-drums-copia.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+    padding-top: 54.5%; /* 258px/473px = 0.545454 */
+    width: 100%;
+  }
