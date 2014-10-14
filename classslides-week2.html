@@ -41,7 +41,6 @@
 			<div class="slides">
 			  
 		<!-- Opening slides -->
-		<section>	  
 			<section>
 			  <a class="visuallyhidden" href="#slide1">Skip nav</a>
 			  <ol class="visuallyhidden" id="toc">
@@ -83,9 +82,8 @@
 			  </ul>
 			  </div>
 			</section>
-        </section>
+
         <!-- Intro: What is Accessibility?-->
-        <section>
 			<section id="slide3">
 				<h2>What is accessibility?</h2>
 				<ul>
@@ -116,73 +114,67 @@
           <p>Source: <a href="http://webaim.org/projects/screenreadersurvey4/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey, May 2012<span class="visuallyhidden"> opens in a new window</span></a></p>
 				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
 			</section>
-        </section>
-      
-        <section id="slide5">
-          <h2>How do I code for accessibility?</h2>
-          <h3>HTML</h3>
-          <img src="img/wallace-gromit.jpg" alt="Wallace & Gromit" style="position:absolute;right:0;" />
-          <ul>
-              <li>Logical Headings</li>
-              <li>Form Labels</li>
-              <li>Tab Index</li>
-              <li>External link indicators</li>
-          </ul>
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
+
+      <section id="slide5">
+        <h2>How do I code for accessibility?</h2>
+        <h3>HTML</h3>
+        <img src="img/wallace-gromit.jpg" alt="Wallace & Gromit" style="position:absolute;right:0;" />
+        <ul>
+            <li>Logical Headings</li>
+            <li>Form Labels</li>
+            <li>Tab Index</li>
+            <li>External link indicators</li>
+        </ul>
+  			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+      </section>
         
-      <section>
-        <section id="slide6">
-          <h2>HTML Headings</h2>
-          <h3>Why should I use them?</h3>
-          <p>The use of on-page headings is one of the most important usability features for screen reader users, as it helps them more easily understand the page structure. (<a href="http://www.webcredible.co.uk/user-friendly-resources/web-accessibility/screen-readers.shtml" target="_blank" title="Link opens in a new window">Source<span class="visuallyhidden"> opens in a new window</span>)</a></p>
-          <!-- explanation here -->
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
-        
-        <section id="slide7">
-          <h2>HTML Headings</h2>
-          <h3>What's new?</h3>
-          <img src="img/html5-girl.png" alt="HTML5 Girl" />
-          <p><a href="http://tink.co.uk/2013/02/screen-reader-support-for-html5-sections/" target="_blank" title="Link opens in a new window">HTML5 Screen Reader testing<span class="visuallyhidden"> opens in a new window</span></a></p>
-          <!-- explanation here -->
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
+      <section id="slide6">
+        <h2>HTML Headings</h2>
+        <h3>Why should I use them?</h3>
+        <p>The use of on-page headings is one of the most important usability features for screen reader users, as it helps them more easily understand the page structure. (<a href="http://www.webcredible.co.uk/user-friendly-resources/web-accessibility/screen-readers.shtml" target="_blank" title="Link opens in a new window">Source<span class="visuallyhidden"> opens in a new window</span></a>)</p>
+        <!-- explanation here -->
+  			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
       
-      <section>
-        <section id="slide8">
-          <h2>Form Labels</h2>
-          <h3>How do they work?</h3>
-          <!-- explanation here -->
-          <div class="code-example">
-            <label for="name-field">Name</label>
-            <input type="text" id="name-field" name="name-field" placeholder="Type your name" />
-            <div class="float">
-              <label for="gender-male">Male</label>
-              <input type="radio" id="gender-male" name="gender" />
-            </div>
-            <div class="float">
-              <label for="gender-female">Female</label>
-              <input type="radio" id="gender-female" name="gender" />
-            </div>
-            <div class="clear"></div>
+      <section id="slide7">
+        <h2>HTML Headings</h2>
+        <h3>What's new?</h3>
+        <img src="img/html5-girl.png" alt="HTML5 Girl" />
+        <p><a href="http://tink.co.uk/2013/02/screen-reader-support-for-html5-sections/" target="_blank" title="Link opens in a new window">HTML5 Screen Reader testing<span class="visuallyhidden"> opens in a new window</span></a></p>
+        <!-- explanation here -->
+  			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+      </section>
+
+      <section id="slide8">
+        <h2>Form Labels</h2>
+        <h3>How do they work?</h3>
+        <!-- explanation here -->
+        <div class="code-example">
+          <label for="name-field">Name</label>
+          <input type="text" id="name-field" name="name-field" placeholder="Type your name" />
+          <div class="float">
+            <label for="gender-male">Male</label>
+            <input type="radio" id="gender-male" name="gender" />
           </div>
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
-        <section id="slide9">
-          <h2>Let's develop it</h2>
-          <h3>Add labels to an HTML form</h3>
-          <!-- demo here -->
-          <pre><code data-trim>
+          <div class="float">
+            <label for="gender-female">Female</label>
+            <input type="radio" id="gender-female" name="gender" />
+          </div>
+          <div class="clear"></div>
+        </div>
+  			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+      </section>
+      <section id="slide9">
+        <h2>Let's develop it</h2>
+        <h3>Add labels to an HTML form</h3>
+        <!-- demo here -->
+        <pre><code data-trim>
 &lt;label for="name-field"&gt;Label&lt;/label&gt;
 &lt;input type="text" id="name-field" name="name-field" placeholder="Type your name" /&gt;
-          </code></pre>
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
+        </code></pre>
+  			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
       
-      <section>
         <section id="slide10">
           <h2>External Links</h2>
           <h3>What's the big deal?</h3>
@@ -206,9 +198,7 @@
           </code></pre>
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
-      </section>
       
-      <section>
         <section id="slide12">
           <h2>Tab Index</h2>
           <h3>What is it?</h3>
@@ -232,7 +222,6 @@
           </code></pre>
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
-      </section>
       
       <section id="slide14">
         <h2>How do I code for accessibility?</h2>
@@ -244,17 +233,16 @@
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
         
-      <section>
-        <section id="slide15">
-          <h2>Offscreen Content</h2>
-          <h3>How does it work?</h3>
-          <pre><code data-trim>
+      <section id="slide15">
+        <h2>Offscreen Content</h2>
+        <h3>How does it work?</h3>
+        <pre><code data-trim>
             .offscreen {
               display: block;
               text-indent: -50000px;
             }
-          </code></pre>
-          <pre><code data-trim>
+        </code></pre>
+        <pre><code data-trim>
             .screen-reader-only {
               top: auto;
               width: 1px;
@@ -263,36 +251,62 @@
               overflow: hidden;
               position: absolute;
             }
-          </code></pre>
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
+        </code></pre>
+  			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+      </section>
         
-        <section id="slide16">
-          <h2>Visibility (or Invisibility)</h2>
-          <h3>How to show and hide content from all users</h3>
-          <!-- cod example here -->
-          <pre><code data-trim>
-            .reallyHidden {
-              display: none;
-              visibility: hidden;
-            }
-            .notHidden {
-              display: block;
-              visibility: visible;
-            }
-          </code></pre>
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
+      <section id="slide16">
+        <h2>Visibility (or Invisibility)</h2>
+        <h3>How to show and hide content from all users</h3>
+        <!-- cod example here -->
+        <pre><code data-trim>
+          .reallyHidden {
+            display: none;
+            visibility: hidden;
+          }
+          .notHidden {
+            display: block;
+            visibility: visible;
+          }
+        </code></pre>
+  			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+      </section>
         
-        <section id="slide17">
-          <h2>Let's Develop It</h2>
-          <h3>Explore keyboard navigation with content that is hidden and offscreen</h3>
-          <!-- demo here -->
-    			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-        </section>
+      <section id="slide17">
+        <h2>Let's Develop It</h2>
+        <h3>Explore keyboard navigation with content that is hidden and offscreen</h3>
+        <!-- demo here -->
+  			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
+      </section>
+
+      <section id="slide18">
+        <h2>How do I code for accessibility?</h2>
+        <h3>Accessible Rich <br>Internet Applications</h3>
+        <p>Expands HTML's native vocabulary.</p>
+      </section>
+
+      <section id="slide19">
+        <h2>ARIA Core Components</h2>
+          <div class="inset-width">
+            <div class="definition">
+              <h4 style="margin-top: 0.75em">Roles</h4>
+              <p>What does this thing do</p>
+              <pre><code class="html xml">   <span class="tag">&lt;<span class="title">form</span> <span class="attribute">role</span>=<span class="value">"search"</span>&gt;</span></code></pre>
+            </div>
+            <div class="definition">
+              <h4 style="margin-top: 0.75em">States</h4>
+              <p>The current condition of this particular thing</p>
+              <pre><code class="html xml">   <span class="tag">&lt;<span class="title">input</span> <span class="attribute">aria-disabled</span>=<span class="value">"true"</span>&gt;</span></code></pre>
+            </div>
+            <div class="definition">
+              <h4 style="margin-top: 0.75em">Properties</h4>
+              <p>The nature of the thing</p>
+              <pre><code class="html xml">   <span class="tag">&lt;<span class="title">input</span> <span class="attribute">aria-required</span>=<span class="value">"true"</span>&gt;</span></code></pre>
+            </div>
+          </div>
       </section>
       
-			<section id="slide18">
+			<section id="slide20">
 				<h2>General Resources</h2>
 					<ul>
 						<li><a href="http://webaim.org/projects/screenreadersurvey4/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey<span class="visuallyhidden"> opens in a new window</span></a></li>
@@ -308,7 +322,7 @@
 				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
 			</section>
 			
-			<section id="slide19">
+			<section id="slide21">
 			  <h2>Code Resources</h2>
 			  <ul>
 			    <li><a href="http://webaim.org/techniques/keyboard/tabindex" target="_blank" title="Link opens in a new window">TabIndex<span class="visuallyhidden"> opens in a new window</span></a></li>

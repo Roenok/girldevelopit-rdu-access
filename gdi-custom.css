@@ -41,6 +41,10 @@
   .reveal .h4-style {
     font-size: 1em;
   }
+  .reveal h3.smaller {
+    font-size: 0.75em;
+    margin-top: 0.5em;
+  }
   .reveal .small {
     display: inline-block;
     font-size: 0.6em;
