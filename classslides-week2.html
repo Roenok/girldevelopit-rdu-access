@@ -111,14 +111,14 @@
               <li>Lack of "skip to main content" or "skip navigation" links</li>
             </ul>
         </div>
-          <p>Source: <a href="http://webaim.org/projects/screenreadersurvey4/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey, May 2012<span class="visuallyhidden"> opens in a new window</span></a></p>
+          <p>Source: <a href="http://webaim.org/projects/screenreadersurvey5/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey, February 2014<span class="visuallyhidden"> opens in a new window</span></a></p>
 				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
 			</section>
 
       <section id="slide5">
         <h2>How do I code for accessibility?</h2>
         <h3>HTML</h3>
-        <img src="img/wallace-gromit.jpg" alt="Wallace & Gromit" style="position:absolute;right:0;" />
+        <img src="img/wallace-gromit.jpg" alt="Wallace &amp; Gromit" style="position:absolute;right:0;" />
         <ul>
             <li>Logical Headings</li>
             <li>Form Labels</li>
@@ -132,15 +132,22 @@
         <h2>HTML Headings</h2>
         <h3>Why should I use them?</h3>
         <p>The use of on-page headings is one of the most important usability features for screen reader users, as it helps them more easily understand the page structure. (<a href="http://www.webcredible.co.uk/user-friendly-resources/web-accessibility/screen-readers.shtml" target="_blank" title="Link opens in a new window">Source<span class="visuallyhidden"> opens in a new window</span></a>)</p>
+        <pre><code class="html">
+ // Headings should not skip levels until h1-h4 have been established
+ &lt;h1&gt;Most important&lt;/h1&gt;
+ &lt;h2&gt;Next most important&lt;/h2&gt;
+ &lt;h3&gt;Third most important&lt;/h3&gt;
+ &lt;h4&gt;Other heading&lt;/h4&gt;
+        </code></pre>
         <!-- explanation here -->
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
       
       <section id="slide7">
-        <h2>HTML Headings</h2>
-        <h3>What's new?</h3>
+        <h2>HTML5 Headings</h2>
+        <h3>Use with caution</h3>
         <img src="img/html5-girl.png" alt="HTML5 Girl" />
-        <p><a href="http://tink.co.uk/2013/02/screen-reader-support-for-html5-sections/" target="_blank" title="Link opens in a new window">HTML5 Screen Reader testing<span class="visuallyhidden"> opens in a new window</span></a></p>
+        <p><a href="http://juicystudio.com/article/html5-outline-algorithm-jaws.php" target="_blank" title="Link opens in a new window">HTML5 Outline Algorithm in JAWS<span class="visuallyhidden"> opens in a new window</span></a></p>
         <!-- explanation here -->
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
@@ -151,17 +158,21 @@
         <!-- explanation here -->
         <div class="code-example">
           <label for="name-field">Name</label>
-          <input type="text" id="name-field" name="name-field" placeholder="Type your name" />
+          <input type="text" id="name-field" name="name-field" placeholder="Type your furry friend's name" />
           <div class="float">
-            <label for="gender-male">Male</label>
-            <input type="radio" id="gender-male" name="gender" />
+            <label for="species-dog">Dog</label>
+            <input type="radio" id="species-dog" name="species" />
           </div>
           <div class="float">
-            <label for="gender-female">Female</label>
-            <input type="radio" id="gender-female" name="gender" />
+            <label for="species-cat">Cat</label>
+            <input type="radio" id="species-cat" name="species" />
           </div>
           <div class="clear"></div>
         </div>
+        <pre><code data-trim>
+&lt;label for="name-field"&gt;Label&lt;/label&gt;
+&lt;input type="text" id="name-field" name="name-field"&gt;
+        </code></pre>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
       <section id="slide9">
@@ -282,7 +293,11 @@
       <section id="slide18">
         <h2>How do I code for accessibility?</h2>
         <h3>Accessible Rich <br>Internet Applications</h3>
-        <p>Expands HTML's native vocabulary.</p>
+        <ul>
+          <li>Expands HTML's native vocabulary.</li>
+          <li>Communicate state and purpose to assistive technologies.</li>
+          <li>Used for complex interactive controls.</li>
+        </ul>
       </section>
 
       <section id="slide19">
@@ -318,6 +333,8 @@
 						<li><a href="http://www.w3.org/WAI/" target="_blank">W3C Web Accessibility Initiative (WAI).</a></li>
 						
 						<li><a href="http://webaim.org/" target="_blank">WebAIM</a>, an accessibility-focused organization with great information.<span class="visuallyhidden"> opens in a new window</span></li>
+
+            <li><a href="http://www.w3.org/TR/aria-in-html/" target="_blank" title="Link opens in a new window">Using ARIA in HTML<span class="visuallyhidden"> opens in a new window</span></a>
 					</ul>
 				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
 			</section>
@@ -327,7 +344,7 @@
 			  <ul>
 			    <li><a href="http://webaim.org/techniques/keyboard/tabindex" target="_blank" title="Link opens in a new window">TabIndex<span class="visuallyhidden"> opens in a new window</span></a></li>
 			    
-			    <li><a href="http://webaim.org/techniques/semanticstructure/" target="_blank" title="Link opens in a new window">Headings & Semantic Structure<span class="visuallyhidden"> opens in a new window</span></a></li>
+			    <li><a href="http://webaim.org/techniques/semanticstructure/" target="_blank" title="Link opens in a new window">Headings &amp; Semantic Structure<span class="visuallyhidden"> opens in a new window</span></a></li>
 			    
 						<li><a href="http://tink.co.uk/2013/02/screen-reader-support-for-html5-sections/" target="_blank" title="Link opens in a new window">HTML5 Headings & Screen Readers<span class="visuallyhidden"> opens in a new window</span></a></li>
 			    
