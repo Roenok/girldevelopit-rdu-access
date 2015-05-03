@@ -167,21 +167,26 @@
 				<li class="fragment">Alternate text describes pictorial content in words.</li>
 				<li class="fragment">Pay attention to context.</li>
 				<li class="fragment">Describe the <em>function</em>, not the content.</li>
-				<li class="fragment">If an image is purely decorative, use "" to instruct a screen reader to skip it.</li>
-				<li class="fragment">Instead of using "longdesc," provide a caption or link.</li>
+				<li class="fragment">If an image is purely decorative, use <code>alt=""</code> to instruct a screen reader to skip it.</li>
+				<li class="fragment">Instead of using "longdesc," provide a caption or link. Consider HTML5 <code>figure</code> and <code>figcaption</code>.</li>
 			</ul>
 			<pre><code>
-				<p>&#60;img src="location" alt="brief description"&#62;</p>
+&#60;img src="location.jpg" alt="brief description"&#62;
+
+&lt;figure&gt;
+  &lt;img src="location.jpg"&gt;
+  &lt;figcaption&gt;brief description&lt;/figcaption&gt;
+&lt;/figure&gt;
 			</code></pre>
 		</section>
 		<section id="slide17">
 			<h2>Other tips for screen readers</h2>
 			<ul>
-				<li class="fragment">Headings and skip-nav links give users a way to navigate through a page.</li>
+				<li class="fragment">Headings skip-nav links and landmark roles give users a way to navigate through a page.</li>
 				<li class="fragment">Content is more than just visual.</li>
 				<li class="fragment">External link indicators prevent unexpected page changes.</li>
 				<li class="fragment">Tables can be hard to navigate, so only use them for tabular data.</li>
-				<li class="fragment">Many users are switching to touch-screen based readers like <a href="http://www.apple.com/accessibility/iphone/vision.html" target="_blank" title="Link opens in a new window">VoiceOver<span class="visuallyhidden"> opens in a new window</span></a>.</li>
+				<li class="fragment">Many users are switching to touch-screen based readers like <a href="http://www.apple.com/accessibility/iphone/vision.html" target="_blank" title="Link opens in a new window">VoiceOver on iOS<span class="visuallyhidden"> opens in a new window</span></a>.</li>
 			</ul>
 		<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
 		</section>
@@ -259,10 +264,10 @@
 		<section id="slide27">
 			<h3>Dealing with cognitive disabilities</h3>
 				<ul>
-					<li class="fragment">Unfortunately, there is not a lot of research in this area.</li>
+					<li class="fragment">This is a less-researched area of web accessibility. Here is a <a href="http://jkg3.com/Journal/cognitive-accessibility-101-part-1-what-is-cognitive-accessibility">Cognitive 101</a>.</li>
 					<li class="fragment">Minimize cognitive load--don't overwhelm the user.</li>
-					<li class="fragment">Use common icons to mark important tasks.</li>
-					<li class="fragment">If you have timed content (forms, image galleries, etc.) allow users to control extend time.</li>
+					<li class="fragment">Use common icons to mark important tasks and consider text labels.</li>
+					<li class="fragment">If you have timed content (forms, image galleries, etc.) provide controls or allow users to extend time.</li>
 					<li class="fragment">CAPTCHAs aren't blind-friendly, are very difficult for users with learning disabilities like dyslexia, and annoy everyone. Consider <a href="http://webaim.org/blog/spam_free_accessible_forms/" target="_blank" title="Link opens in a new window">an alternative method<span class="visuallyhidden"> opens in a new window</span></a>.</li>
 				</ul>
 				<img class="fragment" src="img/captcha.png" alt="Screenshot of a Captcha" />
@@ -281,34 +286,18 @@
 				<h3>Resources</h3>
 					<ul>
 					  <li class="fragment"><a href="http://webaim.org/resources/designers/" target="_blank" title="Link opens in a new window">Web Accessibility for Designers<span class="visuallyhidden"> opens in a new window</span></a></li>
+						
+						<li class="fragment"><a href="http://webaim.org/" target="_blank" title="Link opens in a new window">WebAIM (Web Accessibility in Mind)<span class="visuallyhidden"> opens in a new window</span></a></li>
 
-					  <li class="fragment"><a href="http://inclusivedesign24.org/" target="_blank" title="Link opens in a new window">Inclusive Design 24<span class="visuallyhidden"> opens in a new window</span></a></li>
+					  <li class="fragment"><a href="http://www.globalaccessibilityawarenessday.org/" target="_blank" title="Link opens in a new window">Global Accessibility Awareness Day<span class="visuallyhidden"> opens in a new window</span></a></li>
 
-					  <li class="fragment"><a href="http://substantial.com/blog/2014/07/22/how-i-audit-a-website-for-accessibility/" target="_blank" title="Link opens in a new window">Auditing a Website for Accessibility<span class="visuallyhidden"> opens in a new window</span></a></li>
+					  <li class="fragment"><a href="http://a11ywins.tumblr.com" target="_blank" title="Link opens in a new window">Accessibility Wins<span class="visuallyhidden"> opens in a new window</span></a></li>
+
+					  <li class="fragment"><a href="http://wet-boew.github.io/v4.0-ci/index-en.html" target="_blank" title="Link opens in a new window">Web Experience Toolkit<span class="visuallyhidden"> opens in a new window</span></a></li>
 						
 						<li class="fragment"><a href="http://www.w3.org/WAI/" target="_blank" title="Link opens in a new window">W3C Web Accessibility Initiative (WAI)<span class="visuallyhidden"> opens in a new window</span></a></li>
-						
-						<li class="fragment"><a href="http://webaim.org/" target="_blank" title="Link opens in a new window">WebAIM<span class="visuallyhidden"> opens in a new window</span></a>, an accessibility-focused organization with great information</li>
 				  </ul>
 				</section>
-
-				<section>
-					<h3>Development Resources</h3>
-					<ul>
-						<li class="fragment"><a href="http://wave.webaim.org/toolbar/" target="_blank" title="Link opens in a new window">Chrome Accessibility Dev Tools<span class="visuallyhidden"> opens in a new window</span></a>, a Chrome extension that does in-browser accessibility auditing</li>
-						
-						<li class="fragment"><a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/" target="_blank" title="Link opens in a new window">Web Developer toolbar<span class="visuallyhidden"> opens in a new window</span></a>, a Firefox extension with helpful tools</li>
-
-						<li class="fragment"><a href="https://www.virtualbox.org/wiki/End-user_documentation" target="_blank" title="Link opens in a new window">VirtualBox<span class="visuallyhidden"> opens in a new window</span>, free  application for testing Windows on Mac/Linux</a></li>
-						
-						<li class="fragment"><a href="https://www.modern.ie/en-us/virtualization-tools#downloads" target="_blank" title="Link opens in a new window">Modern.ie<span class="visuallyhidden"> opens in a new window</span></a>, free test VMs for use with VirtualBox</li>
-
-						<li class="fragment"><a href="http://www.nvda-project.org/" target="_blank" title="Link opens in a new window">NonVisual Desktop Access (NVDA)<span class="visuallyhidden"> opens in a new window</span></a>, a free and open source screen reader for Windows</li>
-
-						<li class="fragment"><a href="http://www.freedomscientific.com/Downloads/ProductDemos/#JAWS" target="_blank" title="Link opens in a new window">JAWS Screen Reader<span class="visuallyhidden"> opens in a new window</span></a>, popular screen reader for Windows with free 40-minute demo</li>
-					</ul>
-				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
-			</section>
 		</div>
 		<footer>
       <div class="copyright">

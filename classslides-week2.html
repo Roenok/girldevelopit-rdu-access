@@ -98,8 +98,8 @@
         <h3>HTML</h3>
         <img src="img/wallace-gromit.jpg" alt="Wallace &amp; Gromit" style="position:absolute;right:0;" />
         <ul>
-            <li>Logical Headings</li>
-            <li>Form Labels</li>
+            <li>Headings &amp; Semantic Structure</li>
+            <li>Form Labels &amp; Text Alternatives</li>
             <li>Tab Index</li>
             <li>External link indicators</li>
         </ul>
@@ -108,8 +108,7 @@
         
       <section id="slide6">
         <h2>HTML Headings</h2>
-        <h3>Why should I use them?</h3>
-        <p>The use of on-page headings is one of the most important usability features for screen reader users, as it helps them more easily understand the page structure. (<a href="http://www.webcredible.co.uk/user-friendly-resources/web-accessibility/screen-readers.shtml" target="_blank" title="Link opens in a new window">Source<span class="visuallyhidden"> opens in a new window</span></a>)</p>
+        <p>Semantic structure is one of the most important usability features for screen reader users, as it helps them more easily understand and navigate the page structure. <a href="http://accessiblehtmlheadings.com/" target="_blank" title="Link opens in a new window">Read more about headings<span class="visuallyhidden"> opens in a new window</span></a>.</p>
         <pre><code class="html">
  // Headings should not skip levels until h1-h4 have been established
  &lt;h1&gt;Most important&lt;/h1&gt;
@@ -125,7 +124,8 @@
         <h2>HTML5 Headings</h2>
         <h3>Use with caution</h3>
         <img src="img/html5-girl.png" alt="HTML5 Girl" />
-        <p><a href="http://juicystudio.com/article/html5-outline-algorithm-jaws.php" target="_blank" title="Link opens in a new window">HTML5 Outline Algorithm in JAWS<span class="visuallyhidden"> opens in a new window</span></a></p>
+        <p><a href="http://www.paciellogroup.com/blog/2013/10/html5-document-outline/" target="_blank" title="Link opens in a new window">The HTML5 Document Outline
+<span class="visuallyhidden"> opens in a new window</span></a><br> by the Paciello Group</p>
         <!-- explanation here -->
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
@@ -153,6 +153,7 @@
         </code></pre>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
+
       <section id="slide9">
         <h2>Let's develop it</h2>
         <h3>Add labels to an HTML form</h3>
@@ -166,9 +167,10 @@
       
         <section id="slide10">
           <h2>External Links</h2>
-          <h3>What's the big deal?</h3>
-          <img src="img/dont-make-me-think.jpg" alt="Don't Make Me Think by Steve Krug" style="position:absolute;right:0;max-width:25%;" />
-          <img src="img/links-wcag.png" alt="WCAG 2.0 Link requirements" style="position:absolute;left:0;" />
+          <h3>Provide affordances to warn users.</h3>
+          <img src="img/dont-make-me-think.jpg" alt="Don't Make Me Think by Steve Krug" style="float: right;max-width:25%;" />
+          <img src="img/links-wcag.png" alt="WCAG 2.0 Link requirements" />
+          <img src="img/how-i-audit-a-website-external-link.png" alt="How I Audit a Website for Accessibility external link indicator">
           <!-- explanation here -->
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
@@ -180,22 +182,27 @@
           <pre><code data-trim>
 &lt;a href="goofy.html"&gt;Goofy page&lt;a&gt;
 
-&lt;a href="http://disney.com" target="_blank" title="Link opens in a new window"&gt;
-  Disney.com 
-  &lt;span class="offscreen"&gt; opens in a new window&lt;span&gt;
+&lt;a href="http://disney.com" target="_blank" 
+   title="Link opens in a new window"
+   class="external-link"&gt;
+   Disney.com 
+   &lt;span class="offscreen"&gt;
+     opens in a new window
+   &lt;span&gt;
 &lt/a&gt;
           </code></pre>
+          <p>For links that open in new windows, an offscreen <code>span</code> inside the link is most reliable for screen readers, but <code>title=""</code> can also be used.</p>
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
       
         <section id="slide12">
           <h2>Tab Index</h2>
           <h3>What is it?</h3>
-          <p>The tabindex attribute explicitly defines the navigation order for focusable elements (typically links and form controls) within a page. It can also be used to define whether elements should be focusable or not. (<a href="http://webaim.org/techniques/keyboard/tabindex" target="_blank" title="Link opens in a new window">WebAIM<span class="visuallyhidden"> opens in a new window</span></a>)</p>
+          <p>The tabindex attribute explicitly defines the tab order for focusable elements (typically links and form controls) within a page. It can be used to define whether elements should be focusable. (<a href="http://webaim.org/techniques/keyboard/tabindex" target="_blank" title="Link opens in a new window">WebAIM<span class="visuallyhidden"> opens in a new window</span></a>)</p>
           <div style="padding-top:20px;">
             <h1 tabIndex="0" style="color:white">Focusable Heading</h1>
             <a href="#" tabIndex="-1">Link focusable only by script</a>
-            <div tabIndex="0">Div tabbable with new order</div>
+            <div tabIndex="0">Focusble div</div>
           </div>
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
           <aside class="notes">Source: http://reference.sitepoint.com/html/a/tabindex</aside>
@@ -205,10 +212,11 @@
           <h2>Let's Develop It</h2>
           <h3>Explore tab-index on native and non-native elements</h3>
           <pre><code data-trim>
-&lt;h1 tabIndex="0"&gt;Focusable Heading&lt;h1&gt;
-&lt;a href="#" tabindex="-1"&gt;Link focusable only by script&lt;/a&gt;
-&lt;div tabIndex="1"&gt;Div tabbable in new order&lt;div&gt;
+ &lt;h1 tabIndex="0"&gt;Focusable Heading&lt;h1&gt;
+ &lt;a href="#" tabindex="-1"&gt;Link focusable only by script&lt;/a&gt;
+ &lt;div tabIndex="1"&gt;Div tabbable in new order&lt;div&gt;
           </code></pre>
+          <p>Note: <code>tabindex</code> values higher than 0 require managing the entire page's tab order. Use with caution!</p>
     			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
         </section>
       
@@ -216,47 +224,47 @@
         <h2>How do I code for accessibility?</h2>
         <h3>CSS</h3>
         <ul>
-          <li>Offscreen Content</li>
-          <li>Visibility (or Invisibility)</li>
+          <li>Visually Hidden Content</li>
+          <li>Really Hidden</li>
         </ul>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
         
       <section id="slide15">
-        <h2>Offscreen Content</h2>
+        <h2>Visually Hidden Content</h2>
         <h3>How does it work?</h3>
         <pre><code data-trim>
-            .offscreen {
-              display: block;
-              text-indent: -50000px;
-            }
+  /* Hide only visually, but have it available for screenreaders. 
+     Copied from HTML5 Boilerplate
+  */
+    .visuallyhidden { 
+       border: 0; 
+       clip: rect(0 0 0 0); 
+       height: 1px; 
+       margin: -1px; 
+       overflow: hidden; 
+       padding: 0; 
+       position: absolute; 
+       width: 1px; 
+    }
         </code></pre>
-        <pre><code data-trim>
-            .screen-reader-only {
-              top: auto;
-              width: 1px;
-              height: 1px;
-              left: -10000px;
-              overflow: hidden;
-              position: absolute;
-            }
-        </code></pre>
+        <p><a href="http://snook.ca/archives/html_and_css/hiding-content-for-accessibility">Hiding Content for Accessibility</a></p>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
         
       <section id="slide16">
-        <h2>Visibility (or Invisibility)</h2>
+        <h2>Really Hidden</h2>
         <h3>How to show and hide content from all users</h3>
         <!-- cod example here -->
         <pre><code data-trim>
-          .reallyHidden {
-            display: none;
-            visibility: hidden;
-          }
-          .notHidden {
-            display: block;
-            visibility: visible;
-          }
+      .reallyHidden {
+        display: none;
+        visibility: hidden;
+      }
+      .notHidden {
+        display: block;
+        visibility: visible;
+      }
         </code></pre>
   			<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
       </section>
@@ -273,9 +281,10 @@
         <h3>Accessible Rich <br>Internet Applications</h3>
         <ul>
           <li>Expands HTML's native vocabulary.</li>
-          <li>Communicate state and purpose to assistive technologies.</li>
-          <li>Used for complex interactive controls.</li>
+          <li>Communicates state and purpose to assistive technologies.</li>
+          <li>Used mainly for custom widgets and web applications.</li>
         </ul>
+        <p style="margin-top:1em;"><a href="https://www.marcozehe.de/2014/03/27/what-is-wai-aria-what-does-it-do-for-me-and-what-not/" target="_blank">What is WAI-ARIA, what does it do for me, and what not?<span class="visuallyhidden"> opens in a new window</span></a></p>
       </section>
 
       <section id="slide19">
@@ -283,7 +292,7 @@
           <div class="inset-width">
             <div class="definition">
               <h4 style="margin-top: 0.75em">Roles</h4>
-              <p>What does this thing do</p>
+              <p>What does this thing do?</p>
               <pre><code class="html xml">   <span class="tag">&lt;<span class="title">form</span> <span class="attribute">role</span>=<span class="value">"search"</span>&gt;</span></code></pre>
             </div>
             <div class="definition">
@@ -304,35 +313,17 @@
 					<ul>
 						<li><a href="http://webaim.org/projects/screenreadersurvey4/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey<span class="visuallyhidden"> opens in a new window</span></a></li>
 						
-						<li><a href="http://wave.webaim.org/toolbar/" target="_blank" title="Link opens in a new window">WAVE toolbar<span class="visuallyhidden"> opens in a new window</span></a>, a firefox extension that does in-browser checks.</li>
+						<li><a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en" target="_blank" title="Link opens in a new window">Chrome Accessibility Developer Tools<span class="visuallyhidden"> opens in a new window</span></a>, a Chrome extension that does in-browser audits and highlights ARIA properties.</li>
 						
 						<li><a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/" target="_blank" title="Link opens in a new window">Web Developer toolbar<span class="visuallyhidden"> opens in a new window</span></a>, a Firefox extension with helpful tools</li>
 						
-						<li><a href="http://www.w3.org/WAI/" target="_blank">W3C Web Accessibility Initiative (WAI).</a></li>
-						
-						<li><a href="http://webaim.org/" target="_blank">WebAIM</a>, an accessibility-focused organization with great information.<span class="visuallyhidden"> opens in a new window</span></li>
+						<li><a href="http://a11yproject.com/" target="_blank">The Accessibility Project<span class="visuallyhidden"> opens in a new window</span></a></li>
 
             <li><a href="http://www.w3.org/TR/aria-in-html/" target="_blank" title="Link opens in a new window">Using ARIA in HTML<span class="visuallyhidden"> opens in a new window</span></a>
 					</ul>
 				<p class="visuallyhidden"><a href="#toc">Return to Table of Contents</a></p>
 			</section>
-			
-			<section id="slide21">
-			  <h2>Code Resources</h2>
-			  <ul>
-			    <li><a href="http://webaim.org/techniques/keyboard/tabindex" target="_blank" title="Link opens in a new window">TabIndex<span class="visuallyhidden"> opens in a new window</span></a></li>
-			    
-			    <li><a href="http://webaim.org/techniques/semanticstructure/" target="_blank" title="Link opens in a new window">Headings &amp; Semantic Structure<span class="visuallyhidden"> opens in a new window</span></a></li>
-			    
-						<li><a href="http://tink.co.uk/2013/02/screen-reader-support-for-html5-sections/" target="_blank" title="Link opens in a new window">HTML5 Headings & Screen Readers<span class="visuallyhidden"> opens in a new window</span></a></li>
-			    
-			    <li><a href="http://webaim.org/techniques/forms/controls" target="_blank" title="Link opens in a new window">Form Labels<span class="visuallyhidden"> opens in a new window</span></a></li>
-			    
-					  <li><a href="http://webaim.org/techniques/css/invisiblecontent/" target="_blank" title="Link opens in a new window">Invisible Content with CSS<span class="visuallyhidden"> opens in a new window</span></a></li>
-			    
-			    <li><a href="http://mobile.smashingmagazine.com/2013/07/22/simple-responsive-images-with-css-backgrounds/" target="_blank" title="Link opens in a new window">Responsive CSS Backgrounds<span class="visuallyhidden"> opens in a new window</span></a></li>
-			  </ul>
-			</section>
+
     </div>
   		<footer>
         <div class="copyright">
