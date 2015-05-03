@@ -1,6 +1,6 @@
 GDI Core Web Accessibility
 ======================
-This is the official Girl Develop It Web Accessibility curriculum. It was originally developed by Sylvia Richardson, with additional content from Aisha Blake. An update by Marcy Sutton converts it to a two-week class. There are four components: the course slides (classslides.html), a class activity handout (Kitten Alt text.docx), an HTML/CSS demo with two parts (demo.html and demo.css), and an instructor guide (Instructor Guide.docx). 
+This is the official Girl Develop It Web Accessibility curriculum. It was originally developed by Sylvia Richardson, with additional content from Aisha Blake. An update by Marcy Sutton converted it to a two-week class. There are four components: the course slides (classslides.html), a class activity handout (Kitten Alt text.docx), an HTML/CSS demo with two parts (demo.html and demo.css), and an instructor guide (Instructor Guide.docx). 
 
 These materials are under a Creative Commons Attribution-NonCommercial license (http://creativecommons.org/licenses/by-nc/3.0/deed.en_US).
 ## Suggested course description below
@@ -10,6 +10,17 @@ Who can use your websites? Are they accessible to as many people as possible?
 Web accessibility has traditionally described the process of enhancing websites for people with disabilities. Come to this class to learn more about developing with accessibility in mind—and building a better web experience for everyone.
 
 This two-week class will focus on general design principles, with some hands-on exercises. It is helpful to have basic knowledge of HTML and CSS. You should also plan to bring a laptop and some headphones to work along with the class.
+
+## Accessibility Plugin
+
+Includes a custom plugin by Marcy Sutton that improves accessibility of Reveal.js. The plugin does two things:
+
+ * Fully hide inactive slides so that links are removed from the tab order.
+ * Dynamically generate skip links for all slides with `id=""` attributes.
+
+The plugin requires Reveal.js to be initialized as a submodule but is already linked in the 
+slide html files. A CSS file, `css/accessibility-helper-plugin.css` is also included and 
+imported into `css/accesscustom.css`.
 
 ## Theme customization
 
