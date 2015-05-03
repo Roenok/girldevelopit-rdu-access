@@ -52,8 +52,3 @@
   position: absolute;
   white-space: nowrap;
 }
-.offscreen {
-  display: block;
-  left: -50000px;
-  position: absolute;
-}
