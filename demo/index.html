@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Accessibility Demo</title>
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="demo.css" />
+</head>
+<body>
+<section>
+  <header id="top">
+    <h1>Web Accessibility Demo</h1>
+  </header>
+  <article>
+    <h2>Form Labels</h2>
+    <fieldset>
+      <!-- label here -->
+      <input type="text" id="name_field" name="name_field" placeholder="Your favorite character" />
+    </fieldset>
+  </article>
+  <article>
+    <h2>Links</h2>
+    <ul>
+      <li><a href="http://en.wikipedia.org/wiki/Wallace_and_Gromit">Wallace & Gromit</a></li>
+      <li><a href="http://en.wikipedia.org/wiki/Animal_(Muppet)" target="_blank" title="Link opens in a new window">Animal<span class="visuallyhidden"> opens in a new window</span></a></li>
+    </ul>
+  </article>
+  <article>
+    <h2>Offscreen content</h2>
+    <div id="animal">
+      <div>
+        <h3 class="visuallyhidden">Muppets Animal Drummer</h3>
+        <a href="#top" class="visuallyhidden">Back to top</a>
+      </div>
+    </div>
+  </article>
+</section>
+</body>
+</html>
