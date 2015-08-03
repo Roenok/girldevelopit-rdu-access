@@ -1,5 +1,10 @@
 @import 'accessibility-helper-plugin.css';
 
+.reveal section img.nonbordered{
+	border-width: 0;
+	box-shadow: none;
+}
+
 .reveal section.slides-index {
   display: block;
 }
