@@ -1,49 +1,22 @@
-> Please read our slide creation guidelines in [the wiki](https://github.com/girldevelopit/gdi-slides-template/wiki). Then, delete this banner and add the specifics about your class below.
+# Introduction to Web Accessibility
+Slides and materials are hosted at [http://roenok.github.io/girldevelopit-rdu-access/](http://roenok.github.io/girldevelopit-rdu-access/).
 
-# Add Your Course Title Here
-
-Slides and materials are hosted at [http://example.com/](http://example.com/).
+This is the official Girl Develop It Web Accessibility curriculum. This is a four-hour course, divided into two two-hour sessions. It was originally developed by Sylvia Richardson, with additional content from Aisha Blake. An update by Marcy Sutton converted it to a two-week class. There are four components: the course slides (class1.html and class2.html), a class activity handout (Kitten Alt text.docx), an HTML/CSS demo with two parts (demo.html and demo.css), and an instructor guide (Instructor Guide.docx).
 
 ## Course description
+Who can use your websites? Are they accessible to as many people as possible?
 
-Use this space for a short description of your course. We recommend using the description from your meetup event.
+Web accessibility has traditionally described the process of enhancing websites for people with disabilities. Come to this class to learn more about developing with accessibility in mind—and building a better web experience for everyone.
 
-**Cost:** 
-
-**Dates:** 
-
-**Location:** 
-
-A limited number of scholarships are available for those with a financial hardship. To apply, contact us at...
-
+This two-week class will focus on general design principles, with some hands-on exercises. It is helpful to have basic knowledge of HTML and CSS. You should also plan to bring a laptop and some headphones to work along with the class.
 
 ### Prerequisites:
-
-List any prerequisites for this class, including any previous classes or the equivalent self-study or real-world skills.
-
 You should have:
-
-(a) taken Intro or Intermediate HTML/CSS through Girl Develop It, or
-
-(b) built and managed websites on your own,
-
-**And also:**
-
-(a) taken intro to JavaScript through Girl Develop It, or
-
-(b) be familiar with syntax, arrays, conditionals, for and while loops, event handling, jQuery, AJAX requests, and handling JSON responses.
-
+(a) taken Intro to HTML/CSS through Girl Develop It, or
+(b) be familiar with the basics of HTML and CSS
 
 ### Tech requirements:
-
  - Your laptop (Mac, PC, or Linux are all okay).
- - A modern web browser - either Chrome or Firefox with Firebug installed.
+ - A modern web browser - either Chrome or Firefox.
  - A text editor. We recommend Sublime Text 2 (free; available for Mac, PC, and Linux).
-
-
-### Topics covered:
-
- - The topics you plan to cover
- - Written in list form
- - Here's another one
-
+ - A set of headphones or earbuds
