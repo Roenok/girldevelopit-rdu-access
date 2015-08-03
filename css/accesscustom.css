@@ -1,0 +1,79 @@
+@import 'accessibility-helper-plugin.css';
+
+.reveal section.slides-index {
+  display: block;
+}
+
+p.credit{
+	font-size: 60%;
+}
+
+.reveal section img {
+	max-height: 600px;
+}
+
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.clear {
+  clear: both;
+  display: block;
+}
+
+/*
+ * Code examples
+ */
+div.code-example {
+  margin:0 auto;
+  text-align: left;
+  width: 50%;
+}
+  .code-example label {
+    display: block;
+    font-size:1em;
+  }
+  .code-example input[type=text] {
+    font-size: 0.75em;
+    line-height: 1.5em;
+    width: 100%
+  }
+  .code-example div.float {
+    float: left;
+    padding-top: 30px;
+    width: 50%;
+  }
+  .code-example div label {
+    display: inline;
+    margin-right: 10px;
+  }
+  .code-example div input[type=radio] {
+    -webkit-transform: scale(2);
+  }
