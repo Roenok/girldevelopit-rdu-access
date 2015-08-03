@@ -1,0 +1,55 @@
+/* --------------------------------
+  DEMO: Feel free to edit this file 
+------------------------------------ */
+
+/* Utilities */
+
+.visuallyhidden { 
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  margin: -1px; 
+  overflow: hidden; 
+  padding: 0; 
+  position: absolute; 
+  width: 1px; 
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.reallyHidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* Defaults */
+
+a {
+  color: #01a9b4;
+}
+a:hover, a:focus {
+  color: #f3787e;
+}
+
+
+/* Content */
+div#animal {
+  display: inline-block;
+  max-width: 473px;
+  width: 100%;
+}
+  div#animal > div {
+    background-image: url('animal-drums-copia.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
+    padding-top: 54.5%; /* 258px/473px = 0.545454 */
+    width: 100%;
+  }
