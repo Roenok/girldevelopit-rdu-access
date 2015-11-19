@@ -4,8 +4,6 @@
  * The default CSS and JavaScript of Reveal.js has poor keyboard and screen reader
  * accessibility because slides are not fully hidden after animating. This plugin wraps slide
  * contents in an element that can be hidden with CSS and not affect slide transitions.
- * It requires the 'linear' transition to effectively move between slides when CSS is
- * applied.
  *
  * It also includes an auto-generated skip links plugin.
  *
