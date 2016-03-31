@@ -6,7 +6,7 @@
 
     <title>Class 2 ~ Web Accessibility ~ Girl Develop It</title>
 
-    <meta name="description" content="This is the Girl Develop It Web Accessibility curriculum. It was originally developed by Sylvia Richardson and modified by Marcy Sutton.
+    <meta name="description" content="This is the Girl Develop It Web Accessibility curriculum. It was originally developed by Sylvia Pellicore and modified by Marcy Sutton.
 
     This course is meant to be taught as a two-week class. The primary slides are designed for maximum presentability--one picture, one sentence. The vertical slides contain speaker notes, to make the slides more useful as a shared resource.
 
@@ -80,6 +80,7 @@
 						<li>Accessibility is about overcoming barriers.</li>
 						<li>Accessibility is about helping your users.</li>
 					</ul>
+          <aside class="notes">Just a quick review</aside>
 				</section>
 				<section>
 					<h2>What are the common problems?</h2>
@@ -100,6 +101,7 @@
 						</ul>
 					</div>
 					<p>Source: <a href="http://webaim.org/projects/screenreadersurvey5/" target="_blank" title="Link opens in a new window">WebAIM Screen Reader Survey, February 2014<span class="visuallyhidden"> opens in a new window</span></a></p>
+          <aside class="notes">Introduce the WebAIM Screen Reader survey and show the common problems. Marcy's version of the <a href="http://marcysutton.com/stuff/GDI-Accessibility/img/webaim-survey-problematic-items.png">infographic</a> highlights topics covered in the two classes. This can be helpful to keep open in a second browser tab so it can be referenced more than once.</aside>
 				</section>
 
 				<section>
@@ -116,7 +118,7 @@
 
 				<section>
 					<h2>HTML Headings</h2>
-					<p>Semantic structure is one of the most important usability features for screen reader users, as it helps them more easily understand and navigate the page structure. <a href="http://accessiblehtmlheadings.com/" target="_blank" title="Link opens in a new window">Read more about headings<span class="visuallyhidden"> opens in a new window</span></a>.</p>
+					<p>Semantic structure is one of the most important usability features for screen reader users, as it helps them more easily understand and navigate the page structure. Headings also help <em>all</em> your users can and understand content. <a href="http://accessiblehtmlheadings.com/" target="_blank" title="Link opens in a new window">Read more about headings<span class="visuallyhidden"> opens in a new window</span></a>.</p>
 <pre><code class="html">// Headings should not skip levels until h1-h4 have been established
 &lt;h1&gt;Most important&lt;/h1&gt;
 &lt;h2&gt;Next most important&lt;/h2&gt;
@@ -124,6 +126,7 @@
 &lt;h4&gt;Other heading&lt;/h4&gt;
 </code></pre>
 					<p>Tip: use the Firefox Web Developer Toolbar to inspect headings. Look under Information > View Document Outline.</p>
+          <aside class="notes">The metaphor of an outline for a paper or article is helpful here.</aside>
 				</section>
 
 				<section>
@@ -132,6 +135,8 @@
 					<img src="img/html5-girl.png" alt="HTML5 Girl" />
 					<p><a href="http://www.paciellogroup.com/blog/2013/10/html5-document-outline/" target="_blank" title="Link opens in a new window">The HTML5 Document Outline
 					<span class="visuallyhidden"> opens in a new window</span></a><br> by the Paciello Group</p>
+
+          <aside class="notes">Talk about <a href="http://tink.co.uk/2013/02/screen-reader-support-for-html5-sections/">screen reader testing</a> of HTML 5 tags &amp; headings and the current state of the HTML5 heading algorithm (h1's that start over with new landmarks). Mention <a href="http://accessibleculture.org/articles/2011/10/jaws-ie-and-headings-in-html5/">bugs with JAWS and IE8.</a></aside>
 				</section>
 
 				<section>
@@ -189,6 +194,7 @@ opens in a new window
 &lt;/a&gt;
 </code></pre>
 					<p>For links that open in new windows, an offscreen <code>span</code> inside the link is most reliable for screen readers, but <code>title=""</code> can also be used.</p>
+          <aside class="notes">A common problem cited in the WebAIM survey is “unexpected screen changes”. Discuss how to warn users of links that open in new windows with offscreen text and title attributes. Include a discussion about how it's really about usability in general. Recommended reading: “Don't Make Me Think” by Steve Krug</aside>
 				</section>
 
 				<section>
@@ -200,7 +206,10 @@ opens in a new window
 						<a href="#" tabindex="-1">Link focusable only by script</a>
 						<div tabindex="0">Focusble div</div>
 					</div>
-					<aside class="notes">Source: http://reference.sitepoint.com/html/a/tabindex</aside>
+					<aside class="notes">
+            <p>Source: http://reference.sitepoint.com/html/a/tabindex</p>
+            <p>Explain tab order. Show a demo of tabIndex=”” attributes on native and non-native elements to show how it affects the flow of a document (anchor, input, div, heading, etc.). Explain tab index values of -1, 0 and 1+ their specific purposes</p>
+          </aside>
 				</section>
 
 				<section>
@@ -211,6 +220,7 @@ opens in a new window
 &lt;div tabindex="1"&gt;Div tabbable in new order&lt;div&gt;
 </code></pre>
 					<p>Note: <code>tabindex</code> values higher than 0 require managing the entire page's tab order. Use with caution!</p>
+          <aside class="notes">Explicitly mention the pitfalls of positive tabindex values, including the extra maintance and testing. Tabindex is like z-index; any positive value will supercede everything else on the page.</aside>
 				</section>
 
 				<section>
