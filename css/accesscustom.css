@@ -17,6 +17,15 @@ p.credit{
 	max-height: 600px;
 }
 
+.reveal h1 {
+	font-size: 2em;
+}
+
+.reveal h2 {
+	font-size: 1.5em;
+}
+
+
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
