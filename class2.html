@@ -321,7 +321,7 @@ Copied from HTML5 Boilerplate*/
 
       // Full list of configuration options available here:
       // https://github.com/hakimel/reveal.js#configuration
-            Reveal.initialize({
+      Reveal.initialize({
         controls: true,
         progress: true,
         history: true,
@@ -337,7 +337,7 @@ Copied from HTML5 Boilerplate*/
           { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'plugin/zoom-js/zoom.js', async: true },
           { src: 'plugin/notes/notes.js', async: true },
-                    { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
+          { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
         ]
       });
 
